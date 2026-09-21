@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+
+    <style>
+        body {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP3oS0Lp7NMhNhFbvV09nqtOo3tdh6_lLE1xsYnyt8fQ&s=10");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-variant: small-caps;
+
+            margin: 0;
+            min-height: 100vh;
+
+            color: white;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 80%;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            background-color: rgba(172, 90, 172, 0.75);
+            color: rgb(255, 244, 244);
+            text-align: center;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        ul {
+            color: rgb(255, 244, 244);
+        }
+
+        li {
+            margin: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea,
+        select {
+            padding: 8px;
+            margin: 5px;
+            border: 2px solid rgb(225, 141, 204);
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        textarea {
+            vertical-align: top;
+        }
+
+        input[type="file"] {
+            color: white;
+            margin: 10px;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            accent-color: rgb(172, 90, 172);
+        }
+
+        input[type="submit"] {
+            background-color: rgba(172, 90, 172, 0.9);
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgb(172, 90, 172);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>My Feedback Form</h1>
+
+        <form action="thankyou.html">
+
+            <ul>
+
+                <li>
+                    Name:
+                    <input type="text" name="name" placeholder="Enter your name">
+                </li>
+
+                <li>
+                    Email:
+                    <input type="email" name="email" placeholder="Enter your email">
+                </li>
+
+                <li>
+                    Password:
+                    <input type="password" name="password" placeholder="Enter your password">
+                </li>
+
+                <br>
+
+                Check all the emotions that apply to you:
+
+                <br><br>
+
+                <li>
+                    <input type="checkbox" name="anger" value="anger">
+                    Anger
+                </li>
+
+                <li>
+                    <input type="checkbox" name="sad" value="sad">
+                    Sad
+                </li>
+
+                <li>
+                    <input type="checkbox" name="happy" value="happy">
+                    Happy
+                </li>
+
+                <li>
+                    <input type="checkbox" name="ambivalent" value="ambivalent">
+                    Ambivalent
+                </li>
+
+                <br>
+
+                How satisfied are you with our service?
+
+                <br><br>
+
+                <li>
+                    <input type="radio" name="satisfaction" value="very satisfied">
+                    Very satisfied
+                </li>
+
+                <li>
+                    <input type="radio" name="satisfaction" value="satisfied">
+                    Satisfied
+                </li>
+
+                <li>
+                    <input type="radio" name="satisfaction" value="didn't care">
+                    Didn't care
+                </li>
+
+                <li>
+                    <input type="radio" name="satisfaction" value="dissatisfied">
+                    Dissatisfied
+                </li>
+
+                <li>
+                    <input type="radio" name="satisfaction" value="very dissatisfied">
+                    Very dissatisfied
+                </li>
+
+                <br>
+
+                <li>
+                    Further comment:
+                    <br><br>
+                    <textarea name="comment" rows="5" cols="30"
+                        placeholder="Enter your comment here"></textarea>
+                </li>
+
+                <li>
+                    Upload a file:
+                    <input type="file" name="file"
+                        accept=".jpg,.img,.png,.jpeg">
+                </li>
+
+                <li>
+                    Location visited:
+                    <select name="location">
+                        <option>Select Location</option>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                    </select>
+                </li>
+
+                <br>
+
+                <input type="submit" value="Submit">
+
+            </ul>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
