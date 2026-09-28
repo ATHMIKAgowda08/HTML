@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login Form</title>
+
+    <script>
+        function submitinfo() {
+
+            if (gz.log.value == "") {
+                alert("Enter the login name");
+            }
+            else if (gz.pass.value == "") {
+                alert("Enter the password");
+            }
+            
+        }
+    </script>
+</head>
+
+<body>
+
+    <form name="gz">
+
+        Welcome to:
+
+        <h1>Missile Technologies Pvt. Ltd.</h1>
+
+        <br>
+
+        Login Name:
+        <input type="text" name="log">
+
+        <br><br>
+
+        Password:
+        <input type="password" name="pass">
+
+        <br><br>
+
+        <input type="button" value="Submit" onclick="submitinfo()">
+
+        <input type="reset" name="Reset">
+
+    </form>
+
+</body>
+
+</html>
